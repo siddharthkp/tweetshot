@@ -34,6 +34,12 @@ const styles = `
   }
 `
 
+const urlNotPassed = `
+<div style="height: 100vh; display: flex; align-items: center; justify-content: center; text-align:center;">
+  <span>Pass the url for a tweet. <a href="https://github.com/siddharthkp/tweetshot#readme">Here's how</a>
+</div>
+`
+
 let browser
 
 const start = async () => {
@@ -47,6 +53,8 @@ const start = async () => {
 module.exports = async (req, res) => {
   const query = qs.parse(url.parse(req.url).query)
   const tweetUrl = query.url
+
+  if (!tweetUrl) res.end(urlNotPassed)
 
   if (!browser) {
     console.log('starting browser!')
