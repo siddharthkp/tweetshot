@@ -12,7 +12,7 @@
 
 #### usage
 
-`https://tweetshot.now.sh?url=https://twitter.com/siddharthkp/status/1067263616544530432`
+[`https://tweetshot.now.sh?url=https://twitter.com/siddharthkp/status/1067263616544530432`](https://tweetshot.now.sh?url=https://twitter.com/siddharthkp/status/1067263616544530432)
 
 &nbsp;
 
