@@ -22,11 +22,15 @@ const styles = `
   .follow-bar,
   .ProfileTweet-action > .dropdown,
   .permalink-footer,
-  .trends {
-    display: none;
+  .trends,
+  .stream-loading {
+    display: none !important;
   }
-  .ThreadedConversation--permalinkTweetWithAncestors:before {
-    border-color: transparent !important;
+  .timeline-end.has-more-items .stream-end {
+    display: block !important;
+  }
+  .ThreadedConversation--permalinkTweetWithAncestors:before, .permalink-tweet-container:after {
+    border-style: hidden !important;
   }
 `
 
@@ -51,7 +55,7 @@ module.exports = async (req, res) => {
 
   console.log('opening new page')
   page = await browser.newPage()
-  await page.setViewport({ width: 1000, height: 1000, deviceScaleFactor: 1.5 })
+  await page.setViewport({ width: 1000, height: 1000, deviceScaleFactor: 1.25 })
 
   console.log('navigating to url')
   await page.goto(tweetUrl)

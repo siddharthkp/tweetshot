@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://cdn.dribbble.com/users/31506/screenshots/2621777/automatingtweets.png" height="200px"/>
+  <img src="https://raw.githubusercontent.com/siddharthkp/tweetshot/master/logo.png" height="200px"/>
   <br><br>
   <b>Quicky grab a screenshot of a tweet</b>
   <br><br>
-  Artwork by <a href="https://dribbble.com/Greg_Grigoriou">Greg Grigoriou</a>
+  Twitter logo by <a href="https://dribbble.com/Greg_Grigoriou">Greg Grigoriou</a>
 </p>
 
 &nbsp;
