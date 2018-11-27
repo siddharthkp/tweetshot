@@ -1,0 +1,25 @@
+{
+  "name": "tweetshot",
+  "version": "1.0.0",
+  "description": "Quicky grab a screenshot of a tweet",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro",
+    "deploy": "now --docker"
+  },
+  "dependencies": {
+    "@jimp/custom": "0.5.4",
+    "@jimp/plugin-circle": "0.5.4",
+    "@jimp/plugins": "0.5.5",
+    "@jimp/types": "0.5.4",
+    "micro": "9.1.4",
+    "puppeteer": "1.10.0",
+    "replace-color": "2.0.0"
+  },
+  "author": "siddharthkp",
+  "license": "MIT",
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  }
+}
